@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootsrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    
+
+    @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 10s slidy infinite; 
+    }
+
+
+  
+</style>
+
+<body style="background-color:black">
+<!-- heading area -->
+
+<div class="container-fluid rounded" style="height: 70px; background-color: white;">
+        <div class="row rounded" style="background-color:#ffffff;height: 100px; padding: 12px" >
+        <div class="container col-2" style="text-align: left; padding-top: 5px;">
+                <span style="font: size 5px; font-weight: bold; color: aliceblue;">
+                    <a href="HOME_PAGE.html" type="button" class="btn"><img src="pose logo.jpg" width="50" height="50"></a>
+                </span>
+
+        </div>
+        <div class="col-2"></div>
+        <div class="col-6" style="text-align: right;">
+            <a type="button" class="btn"  href="ADMIN_PAGE.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                  </svg>
+                </a>
+            <!-- <button type="button" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                </svg>
+            </button> -->
+            <a type="button" class="btn" href="CUSTOMER_FINAL.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                </svg>
+            </a>
+            <button id="switchForm" onclick = 'secondSitForm()'class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                  </svg>
+                  
+              </button>
+        </div>
+        </div>
+    </h5>
+</div>
+</div>
+
+
+
+<!-- <div class="container-fluid" style="margin-top: 100px;">
+    <button onclick = "addItem()"type="button" class="btn btn-m">
+    <span class="badge-pill badge-dark">New custermer</span>
+    </button>
+</div> -->
+
+
+
+
+
+</div>
+
+<div class="row">
+
+<div class="col-8" style="align-content: center; margin-top: 5vw; margin-left: 8vw; height: 100px;">
+
+    <div style=" object-fit:cover" id="slider">
+        <figure style="height: 120%; height:auto">
+            <img src="IMG_0013.jpg" alt>
+            <img src="IMG_0558.JPG" alt>
+            <img src="IMG_1333.JPG" alt>  
+        </figure>
+        </div>
+</div>
+
+<div class="col-3 container-fluid" style="margin-top:5vw;padding-left: 0px;">
+    <div class="row container-fluid" style="padding-left: 10px;">
+        <span style="font: size 5px;font-weight: bold; color: aliceblue; text-align: left;">
+            <button onclick=" addCustomer()" class="btn-lg"type="button" style="width: fit-content;background-color: white"class="btn">
+                <div class="row">
+                    <img src="camera logo.jpg" height="100px">
+                </div>
+                
+                Try it today
+            </button>
+        </span>
+
+        <span style="font: size 5px; margin-top:10px;font-weight: bold; color: aliceblue;">
+            <button type="button" style="height: 100px;width:200px;background-color: antiquewhite"class="btn">see our deals</button>
+        </span>
+        
+        <span style="font: size 5px; margin-top:10px;font-weight: bold; color: aliceblue;">
+            <button type="button" style="height: 100px;width:200px;background-color: antiquewhite"class="btn">visit our studio</button>
+        </span>
+    </div>
+    
+
+</div>
+
+</div>
+
+
+
+
+  
+    <span id="test"></span>
+    <div class="container-fluid-centre" style="margin: 8vw; margin-top: 0px;">
+    <div id="itemArea"class="row container-fluid-centre"></div>
+
+    <span id="modalArea"></span>
+
+
+
+<!-- second sit modal -->
+
+
+</body>
+
+
+<script>
+// window.onload = addCustomer()
+
+
+function checkInput(option){
+
+    customerArray = getDataLocalStorage('CUSTOMER_ARRAY')||[]
+
+    
+    customerInfo = {
+        SN:0X0,
+        dateOfSession:"",
+        promoCode: "",
+        parentName: "",
+        phoneNumber: "",
+        email : "",
+        address: "",
+        children : [],
+
+        paymentMethod:" ",
+
+        freeKeyring: "no",
+        freeSession: "no",
+        proof: 0,
+
+        keyring: 0 ,
+        magnut: 0 ,
+        mug: 0,
+
+        silver: 0,
+        gold: 0,
+        platinum: 0,
+
+        background: {
+            background1: "",
+            background2: "",
+            background3: "",
+        },
+        staff: {
+            photographer:"",
+            assistant:"",
+        },
+        startFrame: "",
+        endFrame:"",
+        editNotes:"",
+        description:"",
+
+
+        totalCost: 8
+
+
+
+
+
+    }
+
+    promoInfo  = {
+        promoCode : getDataLocalStorage('CURRENT_PROMO_CODE'),
+        promoLocation: "",
+
+
+    }
+
+    parentName = document.getElementById("parentName").value
+    phoneNumber = document.getElementById("phoneNumber").value
+    email = document.getElementById("email").value
+    address = document.getElementById("address").value
+    promoCode = getDataLocalStorage("CURRENT_PROMO_CODE")
+    
+
+
+    if(parentName!="" && phoneNumber!="" && email!="" && address!=""){
+        console.log("all filled ")
+        customerInfo.parentName = parentName
+        customerInfo.phoneNumber = phoneNumber
+        customerInfo.email = email
+        customerInfo.address = address
+        customerInfo.promoCode = promoCode
+
+        
+
+
+
+        // defining the months
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        //generate date of the seesion
+        dayOfShoot =  new Date().getDate()
+        monthOfShoot = month[new Date().getMonth()]
+
+
+        //push date into customerInfo
+        customerInfo.dateOfSession = `${dayOfShoot} ${monthOfShoot}`
+
+
+        // generating SN
+
+        SN = getDataLocalStorage('CUSTOMER_ARRAY') || []
+
+        console.log(SN)
+
+
+
+        if(SN.length==0){
+            console.log("first session")
+            promoInfo = getDataLocalStorage('PROMO_INFO')||[]
+
+
+            // get rid of the following and change them to local strage
+            promoInfo  = {
+            promoCode : getDataLocalStorage('CURRENT_PROMO_CODE'),
+            promoLocation: "",
+            }
+            SN = promoInfo.promoCode + "001"
+            console.log(promoInfo.promoCode + "001")
+            // change SN to int
+            customerInfo.SN = parseInt(SN)
+
+
+        }
+        else{
+            currentPromoCode = getDataLocalStorage('CURRENT_PROMO_CODE')
+
+            if(SN[SN.length -1].promoCode != currentPromoCode){
+                console.log('different promo')
+                SN = currentPromoCode + "001"
+                customerInfo.SN = parseInt(SN)
+
+
+            }
+            else{
+                console.log('same promo')
+
+                lastNumber = SN[SN.length-1].SN
+
+                console.log(lastNumber)
+
+                if(JSON.stringify(lastNumber).length != 6 ){
+                    console.log('not usual session number')
+                
+                x = 2
+                while(JSON.stringify(lastNumber).length != 6){
+                    lastNumber = SN[SN.length-x].SN
+                    console.log(lastNumber)
+                    console.log(JSON.stringify(lastNumber).length)
+                    x+=1
+                }
+            }
+
+                console.log(SN)
+                customerInfo.SN = lastNumber+1
+
+            }
+
+        }
+
+
+
+
+        numberOfChildren = 2
+
+        for(let i = 1; i<=numberOfChildren;i++){
+            childrenInfo = {
+                name:"",
+                age:""
+                }
+            // console.log(i)
+
+            childrenName = document.getElementById(`childrenName${i}`).value
+            childrenAge = document.getElementById(`childrenAge${i}`).value
+
+            // console.log(childrenName)
+            // console.log(childrenAge)
+
+            childrenInfo.name = childrenName
+            childrenInfo.age = childrenAge
+
+            customerInfo.children.push(childrenInfo)
+
+            // console.log(customerInfo)
+
+
+        }
+
+        
+
+
+        if(option == "secondSit"){
+            console.log('second sit, manual SN')
+
+            customerInfo.SN  = document.getElementById('manualSessionNumber').value + `-2`
+        }
+
+        customerArray.push(customerInfo)
+        updateLocalStorage(customerArray,'CUSTOMER_ARRAY')
+
+
+        cancel()
+
+        // console.log(customerArray)
+
+    }
+
+    
+
+
+
+
+}
+
+
+function secondSitForm(){
+    console.log('switching to second form ')
+    document.getElementById('modalArea').innerHTML = `
+    <div id="newCustomer" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:yellow">
+              <h5 class="modal-title">Second Sit Form</h5>
+            </div>
+            <div class="modal-body">
+            
+              <div class="row" style="padding-top:10px">
+                <div class="col-6" style="margin:10px;">
+                    <div class="row">
+                        <div style="padding:0px">
+                        </div>
+                    </div>
+                    <!-- parent name -->
+                    
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">SN</span>
+                            </div>
+                            <input id="manualSessionNumber" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Name</span>
+                            </div>
+                            <input id="parentName" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Phone number</span>
+                            </div>
+                            <input id="phoneNumber" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- email adress -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Email</span>
+                            </div>
+                            <input id="email" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Address</span>
+                            </div>
+                            <input id="address" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    
+                <br>
+                <!-- children name -->
+                <div class="row">
+                    <div class="input-group" style="padding:0px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Name</span>
+                        </div>
+                        <input id="childrenName1" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Age</span>
+                          </div>
+                          <input id="childrenAge1" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="input-group" style="padding:0px; padding-top:10px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Name</span>
+                        </div>
+                        <input id="childrenName2" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Age</span>
+                          </div>
+                          <input id="childrenAge2" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div> 
+                </div>
+
+                <button onclick="addKid()" type="button" class="btn btn-sm" style="background-color:rgba(200, 200, 200, 0); margin-left:-20px" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                </button>
+
+
+
+ 
+
+
+
+                </div>
+
+                
+
+                <!-- Name of the part-->
+                <div class="col-5">
+                    <div class="row">
+                        agreement
+                    </div>
+
+                    <div class="row">
+                        facebook
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">No</label>
+                              </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row" style="padding-top:10px">
+                        <div class="input-group" style="padding:0px">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" style="color: grey;">Signture</span>
+                            </div>
+                            <input id="partName" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+              <button id="confirmed" onclick="checkInput('secondSit');" type="button" class="btn btn-success" data-dismiss="modal">Confirmed</button>
+              <button id="close" onclick="cancel()"type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div >
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    `
+
+
+    newCustomer.style.display = "block"
+    
+}
+
+
+function addCustomer(){
+
+    document.getElementById('modalArea').innerHTML = `
+    <div id="newCustomer" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">New customer</h5>
+            </div>
+            <div class="modal-body">
+            
+              <div class="row" style="padding-top:10px">
+                <div class="col-6" style="margin:10px;">
+                    <div class="row">
+                        <div style="padding:0px">
+                        </div>
+                    </div>
+                    <!-- parent name -->
+
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Name</span>
+                            </div>
+                            <input id="parentName" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Phone number</span>
+                            </div>
+                            <input id="phoneNumber" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- email adress -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Email</span>
+                            </div>
+                            <input id="email" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="row">
+                        <div class="input-group" style="padding:0px; padding-bottom: 10px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: grey;">Address</span>
+                            </div>
+                            <input id="address" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    
+                <br>
+                <!-- children name -->
+                <div class="row">
+                    <div class="input-group" style="padding:0px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Name</span>
+                        </div>
+                        <input id="childrenName1" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Age</span>
+                          </div>
+                          <input id="childrenAge1" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="input-group" style="padding:0px; padding-top:10px">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Name</span>
+                        </div>
+                        <input id="childrenName2" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="color: grey;">Age</span>
+                          </div>
+                          <input id="childrenAge2" type="date" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div> 
+                </div>
+
+                <button onclick="addKid()" type="button" class="btn btn-sm" style="background-color:rgba(200, 200, 200, 0); margin-left:-20px" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="grey" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                </button>
+
+
+
+ 
+
+
+
+                </div>
+
+                
+
+                <!-- Name of the part-->
+                <div class="col-5">
+                    <div class="row">
+                        agreement
+                    </div>
+
+                    <div class="row">
+                        facebook
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">No</label>
+                              </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row" style="padding-top:10px">
+                        <div class="input-group" style="padding:0px">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" style="color: grey;">Signture</span>
+                            </div>
+                            <input id="partName" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+              <button id="confirmed" onclick="checkInput('newCustomer');" type="button" class="btn btn-success" data-dismiss="modal">Confirmed</button>
+              <button id="close" onclick="cancel()"type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div >
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    `
+    newCustomer.style.display = "block"
+    
+
+}
+
+
+function preview() {
+            frame.src = URL.createObjectURL(event.target.files[0]);
+        }
+        function clearImage() {
+            document.getElementById('image').value = null;
+            frame.src = "";
+        }
+
+// this function closes the modal 
+
+function cancel(){
+    newCustomer.style.display = "none"
+
+    // location.reload()
+
+    console.log('working')
+}
+
+</script>
+
+<script src="shared.js"></script>
+
+
+</html>
+
+
+public class Main {
+    // Static method
+    static void myStaticMethod() {
+        System.out.println("Static methods can be called without creating objects");
+    }
+
+    // Public method
+    public void myPublicMethod() {
+        System.out.println("Public methods must be called by creating objects");
+    }
+
+    // Main method
+    public static void main(String[] args) {
+        myStaticMethod(); // Call the static method
+        // myPublicMethod(); This would compile an error
+
+        Main myObj = new Main(); // Create an object of Main
+        myObj.myPublicMethod(); // Call the public method on the object
+    }
+}
